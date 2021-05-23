@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript">
+            var host = "atalltimes.com.ar";
+            if((host == window.location.host) && (window.location.protocol != "https:"))
+                window.location.protocol = "https"
+        </script>
+        <meta charset="utf-8" />
+        <link rel="canonical" href="https://atalltimes.com.ar" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AtAllTimes</title>
+<!--        <link rel="icon" type="image/x-icon" href="assets/img/favicon-computer.ico" /> -->
+        <link rel="icon" type="image/x-icon" href="assets/img/logo-AaT-2.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="http://fonts.cdnfonts.com/css/sweet-story" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <a href="https://api.whatsapp.com/send?phone=541163057807&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20:" class="float1" target="_blank">
+            <i class="fab fa-whatsapp my-float1"></i>
+        </a>
+<!--
+        <a href="https://t.me/AtallTimesbot" class="float2" target="_blank">
+            <i class="fab fa-telegram my-float2"></i>
+        </a>
+-->
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/AaT.svg" alt="Logo AtAllTimes" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Us</a></li>
+                        <li class="nav-item" ><a class="nav-link js-scroll-trigger" id="btn-services1" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Plans</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <input onclick="location.href = 'index.html';" class="flag" type="image" style="height: 25px; margin-top: 1.5%;" src="assets/img/argentina-flag-round-icon-128.png" />
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <object class="object" data="assets/img/AaT-dinamic.svg" type="image/svg+xml">
+                <!-- Imagen alternativa si el archivo SVG no pueda abrirse -->
+                <img src="assets/img/AaT.svg" alt="logo estatico de atalltimes">
+                </object>
+            </div>
+            <div class="container">    
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Know us</a>
+            </div>
+        </header>
+
+        <!-- About-->
+        <section class="page-section row bg-about" id="about">
+            <div class="container st-about">
+                <div class="column box">
+                    <p class="font-text font-italic">¡Hello! <b>AtAllTimes</b> is made up of a team of young programmers, designers and 
+                        proofreaders who love what we do.<br>But what can we do? We offer IT solutions, for this reason we suggest you tell us
+                        what you have in mind and we take care of the rest.
+                    </p>
+                    <a class="btn btn-secondary btn-xl js-scroll-trigger" id="btn-services2" href="#services">Our services</a>
+                </div>
+                <div class="column" style="position: relative;">
+                    <img src="assets/img/mancha.png" class="mancha" alt="fondo mancha">
+                    <iframe class="iframe" id="iframe-about"
+                    src="https://www.youtube.com/embed/i09jPeYeHTQ?cc_load_policy=1" allow='autoplay'>
+                    </iframe> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Services-->
+        <section class="page-section bg-service" id="services">
+            <div class="container st-service" onmouseover="circlemenu()">
+                <div class='menu'>
+                    <input class='toggle' id='menu' type='checkbox'>
+                    <label class="style" for='menu'>
+                    </label>
+
+                    <a data-toggle="modal" data-target="#Modal-web" class='tab' href='#services'>
+                        <p class="fas fa-globe icon-service"></p>
+                        <p class="text-service font-italic1">Webs</p>
+                    </a>
+                    <a data-toggle="modal" data-target="#Modal-responsive" class='tab' href='#services'>
+                        <p class="fas fa-mobile-alt icon-services1"></p>
+                        <p class="text-service font-italic1"><em>Responsive</em></p>
+                    </a>
+                    <a data-toggle="modal" data-target="#Modal-hosting" class='tab' href='#services'>
+                        <p class="fas fa-home icon-services2"></p>
+                        <p class="text-service font-italic1">Hosting</p>
+                    </a>
+                    <a data-toggle="modal" data-target="#Modal-seo" class='tab' href='#services'>
+                        <p class="fas fa-mouse-pointer icon-services3"></p>
+                        <p class="text-service font-italic1">SEO</p>
+                    </a>
+                    <a data-toggle="modal" data-target="#Modal-courses" class='tab' href='#services'>
+                        <p class="fas fa-graduation-cap icon-services4"></p>
+                        <p class="text-service font-italic1">E-Learning</p>
+                    </a>
+                    <a data-toggle="modal" data-target="#Modal-design" class='tab' href='#services'>
+                        <P class="far fa-gem icon-services5"></P>
+                        <p class="text-service font-italic1">Design</p>
+                    </a>
+                    <a data-toggle="modal" data-target="#Modal-domain" class='tab' href='#services'>
+                        <P class="fas fa-key icon-services6"></P>
+                        <p class="text-service font-italic1">Domain</p>
+                    </a>
+                </div><!-- menu -->
+            </div><!-- container -->
+        </section>
+
+        <!-- modal web -->
+        <div class="modal fade" id="Modal-web" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog" >
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Web</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin-web">
+                        <p class="font-text font-italic4" style="text-align: center;">We have different types of websites to offer you!</p>
+                        <div class="modal-body">
+                            <p class="font-text" style="text-align: center;">Dynamic Websites</p>     
+                            <iframe id="iframe-web1" class="iframe-modal1"
+                                src="https://www.youtube.com/embed/Qoowjn-Xjn0?cc_load_policy=1">
+                            </iframe> 
+                            <p class="font-text loc-web">Static Websites</p>
+                            <iframe id="iframe-web2" class="iframe-modal2"
+                                src="https://www.youtube.com/embed/yUPwrZjZ53w?cc_load_policy=1">
+                            </iframe> 
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal domain -->
+        <div class="modal fade" id="Modal-domain" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Web domain</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin-domain">
+                        <p class="font-text" style="text-align: center;">
+                            If you have your website but not a domain. We take care of linking your
+                            page with the domain of your choice. But beware! Whenever it is available.
+                        </p>
+                        <iframe id="iframe-domain" class="iframe-modal"
+                                src="https://www.youtube.com/embed/CKycCq-ZtT0?cc_load_policy=1">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- modal responsive -->
+        <div class="modal fade" id="Modal-responsive" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Responsive Web</h4>
+                        <button type="button" id="close-modal" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin-responsive">
+                        <p class="font-text" style="text-align: center;">
+                            Do you have your website but it is not optimized for smartphones? If your answer is no,
+                            you're probably losing customers. Do not stop writing to us to achieve this goal.
+                        </p>
+                       
+                        <iframe id="iframe-responsive" class="iframe-modal"
+                                src="https://www.youtube.com/embed/V8WpkW1nPj4?cc_load_policy=1">
+                        </iframe>
+                    
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+        <!-- modal hosting -->
+        <div class="modal fade" id="Modal-hosting" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Hosting Web</h4>
+                        <button type="button" id="close-modal" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin-hosting">
+                        <p class="font-text" style="text-align: center;">
+                            How much do you pay monthly for the hosting service? Do not stop writing us 
+                            for a more than competent offer.      
+                        </p>
+                        <iframe id="iframe-hosting" class="iframe-modal"
+                                src="https://www.youtube.com/embed/Ljp4e-xrWRs?cc_load_policy=1">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        <!-- modal seo -->
+          <div class="modal fade" id="Modal-seo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">SEO</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin-seo">
+                        <p class="font-text" style="text-align: center;">
+                            Do you have your website but you can't position it in search engines? Write us, we are going to offer you
+                            different strategies to achieve this goal.
+                        </p>
+                        <iframe id="iframe-seo" class="iframe-modal"
+                                src="https://www.youtube.com/embed/_0ekogaf3ZI?cc_load_policy=1">
+                        </iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal courses -->
+        <div class="modal fade" id="Modal-courses" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">E-Learning</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin-courses" >
+                        <div class="modal-body ">
+                            <p class="font-text" style="text-align: center;">
+                                We currently have the "Course to Create a Website
+                                with HTML-CSS and Django-Python ". Let's train with us!
+                            </p>
+                            <iframe id="iframe-courses1" class="iframe-modal "
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1">
+                            </iframe> 
+                           <!--
+                            <iframe id="iframe-courses2" class="iframe-modal"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                            </iframe> 
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal design -->
+        <div class="modal fade" id="Modal-design" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Web design</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin-design">
+                        <p class="font-text" style="text-align: center;">
+                            We turn your idea into reality, we deliver the web design adapted for PCs, tablets and smartphones.
+                            Any questions do not stop writing us.
+                        </p>
+
+                        <iframe id="iframe-design" class="iframe-modal"
+                                src="https://www.youtube.com/embed/-ut593BSlCk?cc_load_policy=1">
+                        </iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="pricing py-5 bg-pricing" id="pricing">
+            <div class="container">     
+                <div class="row">
+                    <!-- Free Tier -->
+                    <div class="col-lg-3">
+                        <div class="card mb-5 mb-lg-0 scale">
+                            <div class="card-body">
+                                <h5 class="font-10 font-italic3 "><a href="#contact" class="btn btn-block text-blue js-scroll-trigger">Static Plan</a></h5>
+                                <hr>
+                                <ul class="fa-ul font-italic2">
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Domain</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>SSL certificate</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Hosting</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Responsive</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span><strong>Static Web</strong></li>
+                                    <li class="font-size text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Web design</li>
+                                    <li class="font-size text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>SEO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Plus Tier -->
+                    <div class="col-lg-3">
+                        <div class="card mb-5 mb-lg-0 scale">
+                            <div class="card-body">
+                                <h5 class="font-10 font-italic3"><a href="#contact" class="btn btn-block text-blue js-scroll-trigger">Dinamic Plan</a></h5>
+                                <hr>
+                                <ul class="fa-ul font-italic2">
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Domain</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>SSL certificate</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Hosting</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Responsive</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span><strong>Web Dinámica</strong></li>
+                                <li class="font-size text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dynamic Web</li>
+                                <li class="font-size text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>SEO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pro Tier -->
+                    <div class="col-lg-3">
+                        <div class="card mb-5 mb-lg-0 scale">
+                            <div class="card-body">
+                                <h5 class="font-10 font-italic3"><a href="#contact" class="btn btn-block text-blue js-scroll-trigger">Full Static Plan</a></h5>
+                                <hr>
+                                <ul class="fa-ul font-italic2">
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Domain</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>SSL certificate</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Hosting</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Responsive</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span><strong>Static Web</strong></li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Web design</li>
+                                <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>SEO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pro Tier -->
+                    <div class="col-lg-3">
+                        <div class="card mb-5 mb-lg-0 scale">
+                            <div class="card-body">
+                                <h5 class="font-10 font-italic3"><a href="#contact" class="btn btn-block text-blue js-scroll-trigger">Full Dynamic Plan</a></h5>
+                                <hr>
+                                <ul class="fa-ul font-italic2">
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Domain</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>SSL certificate</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Hosting</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Responsive</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span><strong>Dynamic Web</strong></li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span>Web design</li>
+                                    <li class="font-size"><span class="fa-li"><i class="fas fa-check"></i></span><strong>SEO</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+    <!-- Contact-->
+    <section class="contact-section bg-black" id="contact">
+        <div class="container">
+            <h3 class="section-subheading text-blue text-center margin-contact1 card card-body font-italic4">Ready to start your next project with us?</h3>
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <a href="mailto:light4emitting@gmail.com" class="text-blue" target="_blanck"><i class="fas fa-envelope-square fa-3x text-primary-aux mb-2"></i></a>
+                            <h4 class="text-uppercase m-0"><a href="mailto:light4emitting@gmail.com" class="text-blue font-italic4" target="_blanck">Email</a></h4>
+                            <hr class="my-4" />
+                            <div class="small"><a href="mailto:light4emitting@gmail.com" class="text-blue" target="_blanck">light4emitting@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <a href="https://www.facebook.com/AT-all-TIMES-105841041387583" class="text-blue" target="_blanck"><i class="fab fa-facebook-square fa-3x text-primary-aux mb-2"></i></a>
+                            <h4 class="text-uppercase m-0"><a href="https://www.facebook.com/AT-all-TIMES-105841041387583" class="text-blue font-italic4" target="_blanck">Facebook</a></h4>
+                            <hr class="my-4" />
+                            <div class="small"><a href="https://www.facebook.com/AT-all-TIMES-105841041387583" class="text-blue" target="_blanck">AT all TIMES</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <a href="https://www.instagram.com/atalltimesar/" class="text-black-50" target="_blanck"><i class="fab fa-instagram-square fa-3x text-primary-aux mb-2"></i></a>
+                            <h4 class="text-uppercase m-0"><a href="https://www.instagram.com/atalltimesar/" class="text-black" target="_blanck">Instagram</a></h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"><a href="https://www.instagram.com/atalltimesar/" class="text-black-50" target="_blanck">@atalltimesar</a></div>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <a href="https://www.youtube.com/channel/UCWpR1lu-PK3tUzvUgktytkQ/featured" class="text-blue" target="_blanck"><i class="fab fa-youtube-square fa-3x text-primary-aux mb-2"></i></a>
+                            <h4 class="text-uppercase m-0"><a href="https://www.youtube.com/channel/UCWpR1lu-PK3tUzvUgktytkQ/featured" class="text-blue font-italic4" target="_blanck">Youtube</a></h4>
+                            <hr class="my-4" />
+                            <div class="small"><a href="https://www.youtube.com/channel/UCWpR1lu-PK3tUzvUgktytkQ/featured" class="text-blue" target="_blanck">At All Times</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-lg-right margin-contact3">por ©<a href="https://atalltimes.com.ar" class="text-black-50" target="_blanck">AtAllTimes </a>2021</div>
+        </div>
+    </section>
+    
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
